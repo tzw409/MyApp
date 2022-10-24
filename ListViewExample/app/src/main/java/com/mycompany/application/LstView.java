@@ -5,15 +5,22 @@ import android.os.Bundle;
 import android.widget.SimpleAdapter;
 import java.util.ArrayList;
 import java.util.HashMap;
+import android.widget.Toast;
 
 public class LstView extends Activity {
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
         
     }
     
+    private void a(String msg){
+        
+        Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_LONG).show();
+    }
     /*
     private void loadData(){
 
