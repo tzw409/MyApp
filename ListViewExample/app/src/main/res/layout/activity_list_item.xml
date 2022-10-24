@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    android:padding="3dp">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Title"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:textColor="#0f00f0"
+        android:textStyle="bold"
+        android:id="@+id/activity_list_itemTextView"
+        />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Sub title"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:textColor="#f0000f"
+        android:textStyle="italic|normal"
+        android:id="@+id/activity_list_itemTextView1"/>
+
+</LinearLayout>
+
