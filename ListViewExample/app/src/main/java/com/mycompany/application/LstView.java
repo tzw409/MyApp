@@ -6,6 +6,7 @@ import android.widget.SimpleAdapter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import android.widget.Toast;
+import android.content.Context;
 
 public class LstView extends Activity {
     
@@ -14,12 +15,17 @@ public class LstView extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        
+        if (CheckInternet.isInternetOn(this)) {
+            ShowMsg(this, "Connected Internet");
+        }
+        else {
+            ShowMsg(this, "Not Connected Internet"); 
+        }
     }
     
-    private void a(String msg){
+    private void ShowMsg(Context context, String msg){
         
-        Toast.makeText(getApplicationContext(),msg,Toast.LENGTH_LONG).show();
+        Toast.makeText(context.getApplicationContext(),msg,Toast.LENGTH_SHORT).show();
     }
     /*
     private void loadData(){
